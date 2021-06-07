@@ -131,3 +131,7 @@ Revenge.send(new Discord.Attachment(RevengePP))
 //------------------------ HaaaMa Random Gif -----------------------//
 //------------------------ HaaaMa Random Gif -----------------------//
 //------------------------ HaaaMa Random Gif -----------------------//
+
+
+client.on("message", msg => { if ( msg.content == "n!textEnglish" ) { if (msg.author.bot) return; if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RED").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp()) var x = ["EMPRATOR","KUE","Juan"] var x3 = Math.floor(Math.random() * x.length); msg.channel.send(`${x[x3]}`) }});
+
