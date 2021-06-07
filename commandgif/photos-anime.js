@@ -31,10 +31,10 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'anime',
+  name: 'panime',
 
   description: 'rexuss',
 
-  usage: 'anime'
+  usage: 'panime'
 
 };
