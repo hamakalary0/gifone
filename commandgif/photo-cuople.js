@@ -23,7 +23,7 @@ exports.conf = {
 
   guildOnly: false,
 
-  aliases: ['pcuople','Pcuople','pCuople','photo-couple'],
+  aliases: ['pcuople','Pcuople','pcouple','photo-couple'],
 
   permLevel: 0
 
@@ -31,10 +31,10 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'pcuople',
+  name: 'pcouple',
 
   description: 'rexuss',
 
-  usage: 'pcuople'
+  usage: 'pcouple'
 
 };
