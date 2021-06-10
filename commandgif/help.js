@@ -14,14 +14,9 @@ const embed = new Discord.MessageEmbed()
 .setAuthor(`Gif Help`)
 .setDescription(`
 **Info Commands** (*)
-\`server\` - \`avatar\` - \`about\` 
-\`ping\` - \`inv\` - \`say\` - \`vote\`
-
-**Moderation Commands**
-\`ban\` - \`unban\` - \`kick\` - \`clear\`
-\`mute\` - \`unmute\` - \`warn\`
-\`removeRole\` - \`addRole\`
-\`afk\` - \`sug\` - \`report\`
+\`server\` - \`avatar\` - \`about\` - \`vote\`
+\`ping\` - \`inv\` - \`say\` - \`report\`
+\`clear\` - \`afk\` - \`sug\`
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
