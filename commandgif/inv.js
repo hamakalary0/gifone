@@ -19,7 +19,7 @@ message.channel.send({embed});
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: ['inv'],
+aliases: ["inv", "invite"],
 permLevel: 0
 };
 
