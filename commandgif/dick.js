@@ -39,9 +39,9 @@ exports.run = async (app, message, client, args) => {
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
   //    .setTitle(`test`)
-      .setDescription(`\n${Result}`)
- //     .setFooter(`Requested by ${message.author.username}`)
-      .setTimestamp();
+  //   .setDescription(`\n${Result}`)
+       .setFooter(`\n${Result}`)
+//    .setTimestamp();
       message.react("🤍")
 
     message.channel.send(embed);
@@ -54,7 +54,7 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["dick"],
   permLevel: 0
 };
 
