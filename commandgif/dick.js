@@ -44,7 +44,7 @@ exports.run = async (app, message, client) => {
     message.channel.send(embed);
 
     //End
-  }
+  };
 
 
 
