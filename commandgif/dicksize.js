@@ -5,7 +5,7 @@ const { MessageEmbed } = require("discord.js");
 exports.run = (client, message) => {
 
 
-    message.delete();
+   
     let sizes = [
       "8D",
       "8=D",
