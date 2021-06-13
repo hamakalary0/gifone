@@ -133,7 +133,7 @@ Revenge.send(new Discord.Attachment(RevengePP))
 //------------------------ HaaaMa Random Gif -----------------------//
 
 
-const channelid = "842770384398188556"    //id channele vc
+const channelid = "843947526432096286"    //id channele vc
 client.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
