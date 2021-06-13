@@ -28,6 +28,8 @@ exports.run = async (app, message, client, args) => {
       "Haaaaaaam00001"
     ];
 
+message.react("🤍")
+
     let Member =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||
