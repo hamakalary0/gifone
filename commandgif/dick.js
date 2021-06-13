@@ -38,20 +38,19 @@ exports.run = async (app, message, client, args) => {
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
-  //    .setTitle(`Pp v2 Machine`)
-      .setDescription(`${Member.user.username} pp Size Is\n${Result}`)
-      .setFooter(`Requested by ${message.author.username}`)
+  //    .setTitle(`test`)
+      .setDescription(`\n${Result}`)
+ //     .setFooter(`Requested by ${message.author.username}`)
       .setTimestamp();
       message.react("🤍")
 
     message.channel.send(embed);
 
-message.react("🤍")
 
     //End
   };
 
-
+message.react("🤍")
 
 exports.conf = {
   enabled: true,
