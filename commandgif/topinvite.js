@@ -44,8 +44,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'invites',
+  name: 'tinvite',
   description: 'rexuss',
-  usage: 'invites'
+  usage: 'tinvite'
 }; 
 
