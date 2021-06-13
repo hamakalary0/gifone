@@ -1,13 +1,10 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 
-module.exports = {
-  name: "dicksize",
-  aliases: ["dick", "pp", "ppsize"],
-  description: "Show Member PP Size!",
-  usage: "Dicksize <Mention Member>",
-  run: async (client, message, args) => {
-    //Start
+
+exports.run = (client, message) => {
+
+
     message.delete();
     let sizes = [
       "8D",
