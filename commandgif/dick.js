@@ -28,7 +28,6 @@ exports.run = async (app, message, client, args) => {
       "Haaaaaaam00001"
     ];
 
-message.react("🤍")
 
     let Member =
       message.mentions.members.first() ||
@@ -46,6 +45,8 @@ message.react("🤍")
       message.react("🤍")
 
     message.channel.send(embed);
+
+message.react("🤍")
 
     //End
   };
