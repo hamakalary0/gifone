@@ -38,10 +38,10 @@ exports.run = async (app, message, client, args) => {
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
-  //    .setTitle(`test`)
+       .setTitle(`\n${Result}`)
   //   .setDescription(`\n${Result}`)
-       .setFooter(`\n${Result}`)
-//    .setTimestamp();
+       .setFooter(`kurd Text`)
+//    .setTimestamp(); thanks
       message.react("🤍")
 
     message.channel.send(embed);
