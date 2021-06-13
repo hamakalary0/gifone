@@ -2,12 +2,8 @@ const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 const { Color } = require("../../config.js");
 
-module.exports = {
-  name: "dicksize",
-  aliases: ["dick", "pp", "ppsize"],
-  description: "Show Member PP Size!",
-  usage: "Dicksize <Mention Member>",
-  run: async (client, message, args) => {
+
+exports.run = async (client, message, args, msg) => {
     //Start
     message.delete();
     let sizes = [
@@ -32,15 +28,15 @@ module.exports = {
     ];
 
     let Member =
-      message.mentions.members.first() ||
-      message.guild.members.cache.get(args[0]) ||
+      message.mentions.members.first() 
+      message.guild.members.cache.get(args[0]) 
       message.member;
 
     let Result = sizes[Math.floor(Math.random() * sizes.length)];
 
     let embed = new MessageEmbed()
       .setColor(Color)
-      .setTitle(`Pp v2 Machine`)
+      .setTitle('Pp v2 Machine')
       .setDescription(`${Member.user.username} pp Size Is\n${Result}`)
       .setFooter(`Requested by ${message.author.username}`)
       .setTimestamp();
@@ -49,4 +45,9 @@ module.exports = {
 
     //End
   }
-};
+module.exports = {
+  name: "dicksize",
+  aliases: ["dick", "pp", "ppsize"],
+  description: "Show Member PP Size!",
+  usage: "Dicksize <Mention Member>",
+}
