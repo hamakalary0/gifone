@@ -50,7 +50,6 @@ exports.run = async (app, message, client, args) => {
     //End
   };
 
-message.react("🤍")
 
 exports.conf = {
   enabled: true,
