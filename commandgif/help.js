@@ -16,7 +16,8 @@ const embed = new Discord.MessageEmbed()
 **Info Commands** (*)
 \`server\` - \`avatar\` - \`about\` - \`vote\`
 \`ping\` - \`inv\` - \`say\` - \`report\`
-\`clear\` - \`afk\` - \`sug\`
+\`clear\` - \`afk\` - \`sug\` - \`invites\`
+\`topinvite\` 
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
