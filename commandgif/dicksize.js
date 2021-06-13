@@ -35,7 +35,7 @@ exports.run = async (client, message, args, msg) => {
     let Result = sizes[Math.floor(Math.random() * sizes.length)];
 
     let embed = new MessageEmbed()
-      .setColor(`RANDOM`)
+      .setColor(`#RANDOM`)
       .setTitle(`Pp v2 Machine`)
       .setDescription(`${Member.user.username} pp Size Is\n${Result}`)
       .setFooter(`Requested by ${message.author.username}`)
