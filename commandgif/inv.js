@@ -34,7 +34,6 @@ exports.run = async (app, message, client, args) => {
             return message.channel.send(e.message)
         }
     }
-};
 
 exports.conf = {
   enabled: true,
