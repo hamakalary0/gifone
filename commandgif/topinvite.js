@@ -17,7 +17,7 @@ exports.run = async (app, message, client, args) => {
              }))
 
              let replyText = new MessageEmbed()
-             .setDescription('Invites: \n')
+             .setDescription('**Top invites** \n')
              .setColor("BLUE")
 
              const sortedInvites = Object.keys(inviteCounter).sort((a, b) => inviteCounter[b] - inviteCounter[a])
@@ -39,7 +39,7 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["topinv", "topinvite"],
   permLevel: 0
 };
 
