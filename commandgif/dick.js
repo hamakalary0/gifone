@@ -5,7 +5,7 @@ exports.run = async (app, message, client) => {
  
 
     //Start
-    message.delete();
+   
     let sizes = [
       "8D",
       "8=D",
