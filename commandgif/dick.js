@@ -13,19 +13,19 @@ exports.run = async (app, message, client, args) => {
       "8==D",
       "8===D",
       "8====D",
-      "HahdhwhdhD",
-      "Abrlerleereeee",
-      "ArbeleeeeeeD",
-      "Arbeleeeeee",
-      "Haaamaup",
-      "8haaama",
-      "Kurd9999D",
-      "9274€haaaama",
+      "8=====D",
+      "8======D",
+      "8=======D",
+      "8========D",
+      "8=========D",
+      "8==========D",
+      "8===========D",
+      "8============D",
       "8=============D",
-      "8arbele HupppD",
+      "8==============D",
       "8===============D",
-      "8haaaaama=D",
-      "Haaaaaaam00001"
+      "8================D",
+      "8=============D • • "
     ];
 
 
