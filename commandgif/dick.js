@@ -45,7 +45,7 @@ exports.run = async (app, message, client) => {
 
     //End
   }
-};
+
 
 
 exports.conf = {
