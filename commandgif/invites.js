@@ -38,12 +38,12 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["ninv"],
   permLevel: 0
 };
 
 exports.help = {
   name: 'myinvites',
   description: 'rexuss',
-  usage: 'invites'
+  usage: 'invite'
 }; 
