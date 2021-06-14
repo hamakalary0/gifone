@@ -1,14 +1,10 @@
 
     //Start
-   
-const Discord = require("discord.js");
+   const Discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
-const Color = `#FF0000`;
+exports.run = async (app, message, client, args) => {
 
-module.exports = {
-  name: "se",
-  category: "fun",
-  description: "```Converting Server emoji to PNG/GIF!```",
+
   async execute(message, args) {
 
     const emoji = args[0];
