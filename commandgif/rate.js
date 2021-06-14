@@ -1,10 +1,8 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 exports.run = async (app, message, client, args) => {
- 
-
-
     //Start
-  message.delete();
+    message.delete();
     let Content = args.join(" ");
 
     if (!Content)
@@ -20,18 +18,12 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(embed);
 
     //End
-    }
-
-  
-
-
-
-
+  }
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["rate"],
+  aliases: [],
   permLevel: 0
 };
 
@@ -39,4 +31,4 @@ exports.help = {
   name: 'rate',
   description: 'rexuss',
   usage: 'rate'
-};
+}; 
