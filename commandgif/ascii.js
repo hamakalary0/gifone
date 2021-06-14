@@ -6,6 +6,10 @@ exports.run = async (app, message, client, args) => {
 
     //Start
    
+ 
+
+    message.delete();
+    
     let Content = args.join(" ");
 
     if (!Content) return message.channel.send(`Please Give Me Text!`);
@@ -13,7 +17,7 @@ exports.run = async (app, message, client, args) => {
     let Result = await figletAsync(Content);
 
     let embed = new MessageEmbed()
-      .setColor(`RANDOM`)
+      .setColor(Color)
       .setDescription("```" + Result + "```")
       .setTimestamp();
 
@@ -25,7 +29,8 @@ exports.run = async (app, message, client, args) => {
     message.delete();
 
     //End
-  };
+  }
+};
 
    
 
