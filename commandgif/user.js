@@ -6,8 +6,19 @@ exports.run = async (app, message, client, args) => {
    
 
    
+   message.delete();
+    let member = message.mentions.users.first() || message.member;
+
+    const statuses = {
+      online: "Online",
+      dnd: "Do Not Disturb",
+      idle: "Idle",
+      offline: "Offline/Invisible"
+    };
+
+    const embed = new MessageEmbed()
       .setTitle(member.user.username + " Information!")
-      .setColor(`RANDOM`)
+      .setColor(Color)
       .setThumbnail(member.user.displayAvatarURL())
       .addField("Full Name", member.user.tag, true)
       .addField("ID", `${member.id}`, true)
@@ -27,7 +38,8 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(embed);
 
     //End
-  };
+  }
+};
  
 
 
