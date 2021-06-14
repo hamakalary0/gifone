@@ -20,20 +20,20 @@ exports.run = async (app, message, client, args) => {
       .setTitle(member.user.username + " Information!")
       .setColor(`RANDOM`)
       .setThumbnail(member.user.displayAvatarURL())
-      .addField("Full Name", member.user.tag, true)
-      .addField("ID", `${member.id}`, true)
-      .addField("Status", statuses[member.presence.status], true)
+      .addField("**Full Name**", member.user.tag, true)
+      .addField("**ID**", `${member.id}`, true)
+      .addField("**Status**", statuses[member.presence.status], true)
       .addField(
-        `Roles Count`,
+        `**Roles Count**`,
         message.guild.members.cache.get(member.user.id).roles.cache.size ||
           "No Roles!",
         true
       )
-      .addField(`Avatar Url`, `[Link](${member.user.displayAvatarURL()})`, true)
-      .addField("Joined Server At", member.joinedAt.toDateString())
-      .addField("Joined Discord At", member.user.createdAt.toDateString())
+      .addField(`**Avatar Url**`, `[Link](${member.user.displayAvatarURL()})`, true)
+      .addField("**Joined Server**", member.joinedAt.toDateString())
+      .addField("**Joined Discord**", member.user.createdAt.toDateString())
       .setFooter(`Requested by ${message.author.username}`)
-      .setTimestamp();
+  //    .setTimestamp();
 
     message.channel.send(embed);
 
