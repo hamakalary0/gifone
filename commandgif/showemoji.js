@@ -5,7 +5,7 @@ const { MessageEmbed } = require("discord.js");
 exports.run = async (app, message, client, args) => {
 
 
-  async execute(message, args) {
+ 
 
     const emoji = args[0];
     if (!emoji) return message.channel.send(`Please Give Me A Emoji!`);
@@ -33,7 +33,6 @@ exports.run = async (app, message, client, args) => {
       );
     }
   }
-};
 
 
 
