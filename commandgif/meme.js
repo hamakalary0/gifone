@@ -21,7 +21,6 @@ exports.run = async (app, message, client, args) => {
 
     //End
   }
-};
    
 
 
