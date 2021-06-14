@@ -19,7 +19,7 @@ exports.run = async (app, message, client, args) => {
       
       const Added = new MessageEmbed()
         .setTitle("Emoji Converter")
-        .setColor("#146DF6")
+        .setColor(`RANDOM`)
         .addField('<a:waitting:823649927556628481>```Link```', `[Click Me](${Link})`)
         .setImage(Link
         );
