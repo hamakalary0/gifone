@@ -3,15 +3,7 @@ const { MessageEmbed } = require("discord.js");
 exports.run = async (app, message, client, args) => {
 
 
-
-let member = message.mentions.users.first() || message.member;
-
-    const statuses = {
-      online: "Online",
-      dnd: "Do Not Disturb",
-      idle: "Idle",
-      offline: "Offline/Invisible"
-    };
+   
 
     const embed = new MessageEmbed()
       .setTitle(member.user.username + " Information!")
