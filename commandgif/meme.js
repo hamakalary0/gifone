@@ -5,7 +5,7 @@ exports.run = async (app, message, client, args) => {
 
 
     //Start
-  // message.delete();
+   message.delete();
     fetch("https://meme-api.herokuapp.com/gimme")
       .then(res => res.json())
       .then(json => {
@@ -20,7 +20,8 @@ exports.run = async (app, message, client, args) => {
       });
 
     //End
-  };
+  }
+}
    
 
 
