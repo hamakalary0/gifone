@@ -9,7 +9,7 @@ exports.run = async (app, message, client, args) => {
       return message.channel.send(`Please Give Me Something To Rate!`);
 
     let embed = new Discord.MessageEmbed()
-      .setColor(`RANDOM`)
+      .setColor(`#FF0000`)
       .setTitle(`I Rate`)
       .setDescription(`${Math.floor(Math.random() * 11)}/10 To ${Content}`)
       .setFooter(`Requested by ${message.author.username}`)
@@ -18,8 +18,8 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(embed);
 
     //End
- 
- }
+ };
+
 
 
 
