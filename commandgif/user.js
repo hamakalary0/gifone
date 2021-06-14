@@ -7,7 +7,7 @@ exports.run = async (app, message, client, args) => {
 
     const embed = new MessageEmbed()
       .setTitle(member.user.username + " Information!")
-      .setColor(Color)
+      .setColor(`RANDOM`)
       .setThumbnail(member.user.displayAvatarURL())
       .addField("Full Name", member.user.tag, true)
       .addField("ID", `${member.id}`, true)
