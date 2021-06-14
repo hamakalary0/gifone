@@ -18,7 +18,10 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(embed);
 
     //End
-  };
+ 
+ });
+
+
 
 exports.conf = {
   enabled: true,
