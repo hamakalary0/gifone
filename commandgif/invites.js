@@ -27,7 +27,7 @@ exports.run = async (app, message, client, args) => {
                 .setFooter(message.guild.name, message.guild.iconURL())
                 .setAuthor(`Invite Tracker for ${message.guild.name}`)
                 .setDescription(`Information on Invites of ${member.displayName}`)
-                .addField("**No. Invited Persons**", index)
+                .addField("**Num Invites**", index)
                 .addField("Invitation Codes\n\n", content);
             message.channel.send(embed);
         } catch (e) {
