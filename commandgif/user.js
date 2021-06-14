@@ -6,7 +6,7 @@ exports.run = async (app, message, client, args) => {
    
 
    
-   message.delete();
+//   message.delete();
     let member = message.mentions.users.first() || message.member;
 
     const statuses = {
@@ -47,7 +47,7 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["user1"],
+  aliases: ["user", "userinfo"],
   permLevel: 0
 };
 
