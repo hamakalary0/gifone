@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
-exports.run = async (message, bot, args) => {
+exports.run = async (message, client, args) => {
     //Start
     message.delete();
     let Content = args.join(" ");
