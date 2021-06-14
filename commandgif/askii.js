@@ -26,10 +26,8 @@ exports.run = async (app, message, client, args) => {
 
     //End
   }
-};
+
    
-
-
 
 
 
@@ -40,12 +38,12 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["ascii", "asci"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'dicksize',
+  name: 'ascii',
   description: 'rexuss',
-  usage: 'dick'
+  usage: 'ascii'
 };
