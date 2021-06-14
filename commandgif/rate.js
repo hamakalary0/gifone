@@ -31,7 +31,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'rate',
+  name: 'rate People',
   description: 'rexuss',
   usage: 'rate'
 }; 
