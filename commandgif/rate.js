@@ -30,7 +30,7 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["rate"],
   permLevel: 0
 };
 
