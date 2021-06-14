@@ -15,10 +15,10 @@ exports.run = async (app, message, client, args) => {
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
-      .setTitle(`Gay v2 Machine`)
+      .setTitle(`RaGif`)
       .setDescription(`${Member.user.username} Is ${Result}% Gay 🏳️‍🌈`)
       .setFooter(`Requested by ${message.author.username}`)
-      .setTimestamp();
+     // .setTimestamp();
 
     message.channel.send(embed);
 
