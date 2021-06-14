@@ -5,7 +5,7 @@ exports.run = async (app, message, client, args) => {
 
    
 
-    const embed = new MessageEmbed()
+   
       .setTitle(member.user.username + " Information!")
       .setColor(`RANDOM`)
       .setThumbnail(member.user.displayAvatarURL())
@@ -27,8 +27,8 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(embed);
 
     //End
-  };
-
+  }
+ 
 
 
 
