@@ -5,7 +5,7 @@ exports.run = async (app, message, client, args) => {
 
 
     //Start
-   message.delete();
+ //  message.delete();
     let Member =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||
@@ -31,12 +31,12 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["hg"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'dicksize',
+  name: 'howgay',
   description: 'rexuss',
-  usage: 'dick'
+  usage: 'howgay'
 };
