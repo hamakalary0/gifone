@@ -8,7 +8,7 @@ exports.run = async (app, message, client, args) => {
    
  
 
-    message.delete();
+   // message.delete();
     
     let Content = args.join(" ");
 
@@ -26,7 +26,7 @@ exports.run = async (app, message, client, args) => {
 
     message.channel.send(embed);
 
-    message.delete();
+ //   message.delete();
 
     //End
   };
