@@ -5,8 +5,8 @@ exports.run = async (app, message, client, args) => {
 
 
     //Start
-   
-   let Content = args.join(" ");
+  message.delete();
+    let Content = args.join(" ");
 
     if (!Content)
       return message.channel.send(`Please Give Me Something To Rate!`);
