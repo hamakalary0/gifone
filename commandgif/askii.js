@@ -13,7 +13,7 @@ exports.run = async (app, message, client, args) => {
     let Result = await figletAsync(Content);
 
     let embed = new MessageEmbed()
-      .setColor(Color)
+      .setColor(`RANDOM`)
       .setDescription("```" + Result + "```")
       .setTimestamp();
 
