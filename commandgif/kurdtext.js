@@ -70,4 +70,3 @@ exports.help = {
   usage: 'kurd'
 }; 
 
-message.react("🤍")
