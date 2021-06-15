@@ -5,7 +5,7 @@ exports.run = async (app, message, client, args) => {
 
 
     //Start
-   message.react("🤍")
+  
     let sizes = [
       "سەرەتــــاکان هەر جوانــــنج کەســــت بینیـــوە ،،یەکــــسەر بڵـــێ من بێ ئەخـــلاقم...! حەەەەمە",
       "من لەســـەر پەیـــمانم 🙂 تــۆ لەسەر کشـــی ئەو 😄💔! حەمە",
@@ -69,3 +69,5 @@ exports.help = {
   description: 'rexuss',
   usage: 'kurd'
 }; 
+
+message.react("🤍")
