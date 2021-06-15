@@ -17,7 +17,7 @@ const embed = new Discord.MessageEmbed()
 \`server\` - \`avatar\` - \`about\` - \`vote\`
 \`ping\` - \`inv\` - \`say\` - \`report\`
 \`clear\` - \`afk\` - \`sug\` - \`invites\`
-\`topinvite\` 
+\`topinvite\` - \`user\` - \`howgay\` 
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
