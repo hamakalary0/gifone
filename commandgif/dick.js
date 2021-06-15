@@ -40,9 +40,9 @@ exports.run = async (app, message, client, args) => {
       .setColor(`RANDOM`)
        .setTitle(`\n${Result}`)
   //   .setDescription(`\n${Result}`)
-       .setFooter(`kurd Text`)
+       .setFooter(`dick size `)
 //    .setTimestamp(); thanks
-      message.react("🤍")
+      message.react("🍆")
 
     message.channel.send(embed);
 
