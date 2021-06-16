@@ -57,12 +57,12 @@ message.delete();
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["Clear", "clearm"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'text',
+  name: 'clear message',
   description: 'rexuss',
-  usage: 'text'
+  usage: 'clear'
 };
