@@ -7,7 +7,7 @@ exports.run = async (client, message, args, msg) => {
 
 const embed = new Discord.MessageEmbed()
     
-.setColor('#RANDOM') 
+.setColor('RANDOM') 
 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
 // .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 // .setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
