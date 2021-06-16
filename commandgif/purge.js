@@ -7,7 +7,6 @@ exports.run = async (app, message, client, args) => {
     //Start
    
 
-message.delete();
     if (!message.member.hasPermission("MANAGE_MESSAGES"))
       return message.channel.send(
         "You Don't Have Permission To Use This Command!"
