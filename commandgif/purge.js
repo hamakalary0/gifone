@@ -47,7 +47,7 @@ message.delete();
     });
 
     //End
-  }
+  };
 
 
    
