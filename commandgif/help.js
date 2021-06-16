@@ -15,10 +15,9 @@ const embed = new Discord.MessageEmbed()
 .setDescription(`
 **Info Commands** (*)
 \`server\` - \`about\` - \`user\` - \`say\`
-\`ping\` - \`avatar\` - \`vote\` - \`clear\`
-\`report\` - \`sug\` - \`afk\` - \`inv\`
-\`topinvite\` - \`invites\` - \`howgay\` 
-\`dicksize\`
+\`ping\` - \`avatar\` - \`vote\` - \`inv\`
+\`report\` - \`sug\` - \`afk\` - \`invites\`
+\`topinvite\` - \`howgay\` - \`dicksize\`
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
