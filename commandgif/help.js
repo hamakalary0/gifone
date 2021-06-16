@@ -7,17 +7,17 @@ exports.run = async (client, message, args, msg) => {
 
 const embed = new Discord.MessageEmbed()
     
-.setColor('#ef0000') 
+.setColor('#RANDOM') 
 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
 // .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-.setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
+// .setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
 .setAuthor(`Gif Help`)
 .setDescription(`
 **Info Commands** (*)
-\`server\` - \`avatar\` - \`about\` - \`vote\`
-\`ping\` - \`inv\` - \`say\` - \`report\`
-\`clear\` - \`afk\` - \`sug\` - \`invites\`
-\`topinvite\` - \`user\` - \`howgay\` 
+\`server\` - \`about\` - \`user\` - \`say\`
+\`ping\` - \`avatar\` - \`vote\` - \`clear\`
+\`report\` - \`sug\` - \`afk\` - \`inv\`
+\`topinvite\` - \`invites\` - \`howgay\` 
 \`dicksize\`
 
 **Gifs Commands**
