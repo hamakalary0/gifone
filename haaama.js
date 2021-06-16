@@ -146,3 +146,12 @@ client.on("ready", () => {
 
 
 client.login(config.token)
+
+
+client.on("ready", ()=>console.log("READY"));
+
+const jointocreate = require("./jointocreate");
+jointocreate(client);
+
+
+client.login(config.TOKEN)
