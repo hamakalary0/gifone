@@ -18,6 +18,7 @@ const embed = new Discord.MessageEmbed()
 \`ping\` - \`inv\` - \`say\` - \`report\`
 \`clear\` - \`afk\` - \`sug\` - \`invites\`
 \`topinvite\` - \`user\` - \`howgay\` 
+\`dicksize\`
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
