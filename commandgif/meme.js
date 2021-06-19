@@ -16,7 +16,7 @@ exports.run = async (app, message, client, args) => {
           .setTitle(`${json.title}`)
           .setURL(json.postLink)
           .setImage(json.url)
-          .setFooter(`From /r/${json.subreddit}`);
+          .setFooter(`RaGif Memes`);
 
         message.channel.send(embed);
       });
