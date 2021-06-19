@@ -18,12 +18,10 @@ const embed = new Discord.MessageEmbed()
 
 - online   ${
    message.guild.members.cache.filter(m => m.presence.status == "online").size
- }
-
+ } 
 - do not distrub       ${
       message.guild.members.cache.filter(m => m.presence.status == "dnd").size
-    }
-
+    } 
 - idle       ${
    message.guild.members.cache.filter(m => m.presence.status == "idle").size
  }   
