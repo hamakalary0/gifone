@@ -6,7 +6,6 @@ exports.run = async (app, message, client, args) => {
 
 
     client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "list em")) {
     let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
@@ -34,3 +33,16 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(Embed);
   }
 });
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["text"],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'text',
+  description: 'rexuss',
+  usage: 'text'
+};
