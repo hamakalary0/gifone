@@ -161,11 +161,10 @@ client.on("ready", () => {
     });
 });
 
-client.login(config.token)
-
-
-
-
+/////  HaaaaMa
+/////.        haaaaMa
+/////
+/////
 
 client.on("message", message => {
   if (message.channel.id === "824062789328306217") {
@@ -177,15 +176,6 @@ client.on("message", message => {
   }
 });
 
-client.on("message", function(message) {
-  let args = message.content
-    .split(" ")
-    .slice(1)
-    .join(" ");
-  if (message.content.startsWith(prefix + "sa")) {
-    if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
-    message.channel.send(`** ${args}**`);
-  };
 
 
 
