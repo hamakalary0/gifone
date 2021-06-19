@@ -28,7 +28,7 @@ let Member =
       message.guild.members.cache.get(args[0]) ||
       message.member;
 
-    let Result = sizes[Math.floor(Math.random() * sizes.length)];
+    let slots = sizes[Math.floor(Math.random() * sizes.length)];
 
    
 
