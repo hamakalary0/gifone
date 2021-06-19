@@ -29,7 +29,7 @@ exports.run = async (app, message, client, args) => {
           Member.user.id
         }`
       )
-      .setFooter(`RaGif Hacker! ${Member.user.mention}`)
+      .setFooter(`RaGif Hacker! ${Member.user.username}`)
     //  .setTimestamp();
 
     await message.channel.send(` **~~Hacking Started!~~** __Hacking ${Member.user.username}__ `);
