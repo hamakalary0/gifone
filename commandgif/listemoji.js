@@ -22,7 +22,7 @@ exports.run = async (app, message, client, args) => {
         EmojiCount++;
         Emojis += Emoji(emoji.id);
       }
-    });
+    
     let Embed = new Discord.MessageEmbed()
       .setTitle(`Emojis in ${message.guild.name}.`)
       .setDescription(
@@ -30,9 +30,10 @@ exports.run = async (app, message, client, args) => {
       )
       .setColor(`RANDOM`);
     message.channel.send(Embed);
-  };
+  }
 
-   
+
+
 
 
 
