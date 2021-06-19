@@ -17,7 +17,7 @@ const embed = new Discord.MessageEmbed()
 server  -  about  -  user  -  say
 ping  -  avatar  -  vote  -  inv
 report  -  sug  -  afk  -  invites
-topinvite
+topinvite  -  sbot
 
 **Gifs Commands**
 boy  -  girl  -  baby
