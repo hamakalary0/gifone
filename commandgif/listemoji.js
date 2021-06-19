@@ -17,7 +17,7 @@ exports.run = async (app, message, client, args) => {
       if (emoji.animated) {
         Animated++;
         EmojisAnimated += Emoji(emoji.id);
-      } else {
+        else {
         EmojiCount++;
         Emojis += Emoji(emoji.id);
       }
