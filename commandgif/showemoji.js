@@ -16,7 +16,7 @@ exports.run = async (app, message, client, args) => {
 
 
 exports.conf = {
-  enabled: true,
+  enabled: False,
   guildOnly: false,
   aliases: ["se", "showemoji"],
   permLevel: 0
