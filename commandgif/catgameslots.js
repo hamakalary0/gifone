@@ -28,13 +28,10 @@ let Member =
       message.member;
 
     
-}
-
-   
 
 message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
 
-   
+ }  
 
 
    
