@@ -1,5 +1,9 @@
 const Discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
+const figlet = require("figlet");
+const { promisify } = require("util");
+
+
 exports.run = async (app, message, client, args) => {
  
 
@@ -29,7 +33,7 @@ message.delete();
     message.delete();
 
     //End
-  };
+  }
 
 
 
