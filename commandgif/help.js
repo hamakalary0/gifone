@@ -26,7 +26,7 @@ animal  -  anime  -  couple
 emoji  -  bille  -  Aesthetic
 
 **Photos Command**
-Pboy  -  Pgirl  -  Panime
+Pboy  -  Pgirl  -  Panime 
 Pneon  -  Panimal  -  Pcuople
 Psmoking  -  Pbillie
 
@@ -35,8 +35,8 @@ eng  -  arab  -  kurd
 persian  -  turk  -  rabbit
 
 **memes Command**
-mem  -  Meme  -  hmem  -  memes  -  cmeme
-howgay  -  dicksize
+mem  -  Meme  -  hmem  -  memes  
+cmeme  -  howgay  -  dicksize
 
 
 
