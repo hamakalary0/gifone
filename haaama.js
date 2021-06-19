@@ -104,6 +104,32 @@ client.elevation = message => {
     if (message.author.id === config.sahip) permlvl = 4;
     return permlvl;
 };
+
+
+/////  HaaaaaaaMa ////////
+
+client.on("message", message => {
+  if (message.channel.id === "823643356030566410") {
+    message.react("🤍").then(() => {
+      message.react("🖤");
+      message.react("<a:emoji_5:791253013678784571>");
+      
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.login(config.token)
 
 
