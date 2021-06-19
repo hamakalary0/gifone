@@ -11,7 +11,11 @@ const embed = new Discord.MessageEmbed()
 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
 .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 .setAuthor(`RaGif All Members`, ``)
-.setDescription(`** Member
+.setDescription(`**
+
+- all Members  ${message.guild.memberCount}
+
+
 - online   ${
    message.guild.members.cache.filter(m => m.presence.status == "online").size
  }
@@ -27,7 +31,7 @@ const embed = new Discord.MessageEmbed()
                                               - offline   ${
    message.guild.members.cache.filter(m => m.presence.status == "offline").size
  } 
-   all Members  ${message.guild.memberCount}** `)
+  ** `)
 
 message.channel.send({embed});
 }
