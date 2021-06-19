@@ -6,7 +6,7 @@ exports.run = async (app, message, client, args) => {
 
 
     client.on("message", message => {
-  if (message.content.startsWith(prefix + "list em")) {
+  if (message.content.startsWith(PREFIX + "list em")) {
     let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
