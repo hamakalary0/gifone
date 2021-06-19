@@ -22,7 +22,7 @@ exports.run = async (app, message, client, args) => {
         Emojis += Emoji(emoji.id);
       }
     
-    let Embed = new Discord.MessageEmbed()
+  return message.channel.send(new Discord.MessageEmbed()
       .setTitle(`Emojis in ${message.guild.name}.`)
       .setDescription(
         `**Animated [${Animated}]**:\n${EmojisAnimated}\n\n**Standard [${EmojiCount}]**:\n${Emojis}\n\n**All Emoji [${OverallEmojis}]**`
