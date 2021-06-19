@@ -28,7 +28,7 @@ exports.run = async (app, message, client, args) => {
         `**Animated [${Animated}]**:\n${EmojisAnimated}\n\n**Standard [${EmojiCount}]**:\n${Emojis}\n\n**All Emoji [${OverallEmojis}]**`
       )
       .setColor(`RANDOM`);
-    message.channel.send(embed);
+    message.channel.send({embed});
   }
 
 
@@ -37,7 +37,7 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["text"],
+  aliases: ["text", "0"],
   permLevel: 0
 };
 
