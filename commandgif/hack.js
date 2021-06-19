@@ -32,7 +32,7 @@ exports.run = async (app, message, client, args) => {
       .setFooter(`RaGif Hacker!😈😂`)
     //  .setTimestamp();
 
-    await message.channel.send(` ``` Hacking Started! ``` **Hacking ${Member.user.username}** `);
+    await message.channel.send(` ```Hacking Started!``` **Hacking ${Member.user.username}** `);
 
     await message.channel.send(`Hack Status: 10%`);
 
