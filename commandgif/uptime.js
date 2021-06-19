@@ -13,7 +13,7 @@ exports.run = async (app, message, client, args) => {
 
         const embed = new MessageEmbed()
             .setTitle("Uptime")
-            .setColor("RANDOM")
+            .setColor(`RANDOM`)
             .setDescription(`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`)
             .setThumbnail(bot.user.displayAvatarURL())
             .setFooter(message.guild.name, message.guild.iconURL())
