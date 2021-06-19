@@ -38,13 +38,13 @@ message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
    exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["1", "cat"],
+  aliases: ["heart", "Heart", "🤍"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'text',
+  name: 'Heart',
   description: 'rexuss',
-  usage: 'text'
+  usage: 'heart'
 };
 
