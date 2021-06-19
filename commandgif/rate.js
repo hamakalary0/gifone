@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const weather = require("weather-js");
 const { MessageEmbed } = require("discord.js");
 exports.run = async (app, message, client, args) => {
  
@@ -7,24 +8,38 @@ exports.run = async (app, message, client, args) => {
     //Start
    
    message.delete();
-    let Content = args.join(" ");
 
-    if (!Content)
-      return message.channel.send(`Please Give Me Something To Rate!`);
+    if (!args[0]) return message.channel.send("Please Give Location!");
 
-    let embed = new Discord.MessageEmbed()
-      .setColor(`RANDOM`)
-      .setTitle(`I Rate`)
-      .setDescription(`${Math.floor(Math.random() * 11)}/10 To ${Content}`)
-      .setFooter(`Requested by ${message.author.username}`)
-      .setTimestamp();
+    weather.find({ search: args.join(" ") }, function(error, result) {
+      if (error) return message.channel.send(`Something Went Wrong, Try Again Later!`);
 
-    message.channel.send(embed);
+      if (result === undefined || result.length === 0)
+        return message.channel.send(
+          `Invalid Location, Please Give Valid Location!`
+        );
+
+      var current = result[0].current;
+      var location = result[0].location;
+
+      const Weather = new Discord.MessageEmbed()
+        .setColor(Color)
+        .setTitle(`${location.name} Weather!`)
+        .setDescription(`${current.skytext}`)
+        .setThumbnail(current.imageUrl)
+        .addField("Degree Type", location.degreetype, true)
+        .addField("Temperature", `${current.temperature}°`, true)
+        .addField("Humidity", `${current.humidity}%`, true)
+        .addField("Wind", current.winddisplay, true)
+        .addField("Feels Like", `${current.feelslike}°`, true)
+        .addField("Timezone", `UTC${location.timezone}`, true)
+        .setTimestamp();
+
+      message.channel.send(Weather);
+    });
 
     //End
   }
- 
-
 
    
 
