@@ -34,6 +34,10 @@ const embed = new Discord.MessageEmbed()
 \`eng\` - \`arab\` - \`kurd\`
 \`persian\` - \`turk\` - \`rabbit\`
 
+**memes Command**
+\`mem\` - \`meme\`
+\`hmem\` - \`memes\` - \`cmeme\`
+
 
 
 **Links**
