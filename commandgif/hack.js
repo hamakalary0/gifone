@@ -6,7 +6,7 @@ exports.run = async (app, message, client, args) => {
 
     //Start
    
-    message.delete();
+   
 
     let Member =
       message.mentions.members.first() ||
@@ -29,7 +29,7 @@ exports.run = async (app, message, client, args) => {
           Member.user.id
         }`
       )
-      .setFooter(`Jk Don't Take It Serious Its Just Random Generated Strings!`)
+      .setFooter(`RaGif Hacker!`)
       .setTimestamp();
 
     await message.channel.send(`Hacking Started! Hacking ${Member.user.username}`);
