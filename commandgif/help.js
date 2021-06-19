@@ -36,7 +36,7 @@ persian  -  turk  -  rabbit
 
 **memes Command**
 mem  -  Meme  -  hmem  - memes
-cmeme  -  howgay  -  dicksize
+cmeme  -  howgay  -  dicksize  - hack
 
 
 
