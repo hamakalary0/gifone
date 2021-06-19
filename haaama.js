@@ -12,7 +12,7 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`*help`, { type:"PLAYING" })
+ client.user.setActivity(`*help` | ${client.guilds.cache.size}\``, true, { type:"PLAYING" })
   console.log("${client.user.tag}")
 });
 
