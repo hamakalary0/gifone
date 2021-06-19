@@ -1,11 +1,13 @@
 const Discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
+const client = new Discord.Client();
 exports.run = async (app, message, client, args) => {
  
 
 
-    //Start
-   let Emojis = "";
+    client.on("message", message => {
+  if (message.content.startsWith(prefix + "list em")) {
+    let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
     let Animated = 0;
@@ -22,7 +24,7 @@ exports.run = async (app, message, client, args) => {
         EmojiCount++;
         Emojis += Emoji(emoji.id);
       }
-    
+    });
     let Embed = new Discord.MessageEmbed()
       .setTitle(`Emojis in ${message.guild.name}.`)
       .setDescription(
@@ -31,21 +33,4 @@ exports.run = async (app, message, client, args) => {
       .setColor(`RANDOM`);
     message.channel.send(Embed);
   }
-
-
-
-
-
-
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["emojilist", "listemoji", "1"],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'listeemoji',
-  description: 'rexuss',
-  usage: 'listemoji'
-};
+});
