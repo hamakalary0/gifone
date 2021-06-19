@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+const { MessageEmbed } = require("discord.js");
 const fs = require("fs");
 const Discord = require("discord.js");
 const chooseArr = ["✌", "✊", "✋"];
