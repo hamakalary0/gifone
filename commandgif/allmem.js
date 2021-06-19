@@ -1,12 +1,17 @@
 const Discord = require('discord.js');
-const { MessageEmbed } = require("discord.js");
-exports.run = async (app, message, client, args) => {
- 
+const client = new Discord.Client();
+const moment = require('moment');
+var config = require('../config.json');
 
+exports.run = async (client, message, args, msg) => {
 
-    //Start
-   const embed = new Discord.MessageEmbed().setColor(`RANDOM`)
-      .setDescription(`** Member
+const embed = new Discord.MessageEmbed()
+    
+.setColor('RANDOM') 
+.setThumbnail(message.author.avatarURL({dynamic: "true"}))
+.setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+.setAuthor(`RaGif All Members`, ``)
+.setDescription(`** Member
 - online   ${
    message.guild.members.cache.filter(m => m.presence.status == "online").size
  }
@@ -22,23 +27,20 @@ exports.run = async (app, message, client, args) => {
 - offline   ${
    message.guild.members.cache.filter(m => m.presence.status == "offline").size
  } 
-   all Members  ${message.guild.memberCount}**`);
-    message.channel.send({ embed });
-  }
-});
-   
+   all Members  ${message.guild.memberCount}** `)
 
-
+message.channel.send({embed});
+}
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["allm", "Allmem"],
-  permLevel: 0
+enabled: true,
+guildOnly: false,
+aliases: ["allm", "Allmem", "allmem"],
+permLevel: 0
 };
 
 exports.help = {
-  name: 'allmemberes',
+  name: 'allmembere',
   description: 'rexuss',
   usage: 'allmem'
 };
