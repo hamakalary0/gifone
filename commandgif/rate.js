@@ -160,7 +160,7 @@ run: async (bot, message, args) => {
             return message.channel.send(`Oh no an error occurred :( \`${e.message}\` try again later.`);
         }
     }
-}
+
 
     //End
  
