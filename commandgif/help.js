@@ -35,7 +35,7 @@ eng  -  arab  -  kurd
 persian  -  turk  -  rabbit
 
 **memes Command**
-Meme  -  Mem  -  helpmem  - memes
+Meme  -  mem  -  helpmem  - memes
 cmeme  -  howgay  -  dicksize  - hack
 
 
