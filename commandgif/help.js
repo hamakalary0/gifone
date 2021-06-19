@@ -11,13 +11,13 @@ const embed = new Discord.MessageEmbed()
 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
 // .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 .setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
-.setAuthor(`Gif Help`)
+.setAuthor(`RaGif Help`)
 .setDescription(`
 **Info Commands** (*)
 \`server\` - \`about\` - \`user\` - \`say\`
 \`ping\` - \`avatar\` - \`vote\` - \`inv\`
 \`report\` - \`sug\` - \`afk\` - \`invites\`
-\`topinvite\` - \`howgay\` - \`dicksize\`
+\`topinvite\`
 
 **Gifs Commands**
 \`boy\` - \`girl\` - \`baby\`
@@ -35,8 +35,9 @@ const embed = new Discord.MessageEmbed()
 \`persian\` - \`turk\` - \`rabbit\`
 
 **memes Command**
-\`mem\` - \`meme\`
-\`hmem\` - \`memes\` - \`cmeme\`
+mem - Meme - hmem
+memes - cmeme
+howgay - dicksize
 
 
 
