@@ -29,7 +29,7 @@ exports.run = async (app, message, client, args) => {
       )
       .setColor(`RANDOM`);
     message.channel.send(embed);
-  };
+  }
 
 
 
