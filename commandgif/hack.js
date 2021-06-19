@@ -15,7 +15,7 @@ exports.run = async (app, message, client, args) => {
 
     if (!Member)
       return message.channel.send(
-        `Please Mention A Member That You Want To Hack!`
+        `Please Mention Some One!`
       );
 
     if (Member.user.id === message.author.id)
@@ -23,18 +23,22 @@ exports.run = async (app, message, client, args) => {
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
-      .setTitle(`Hack Status: Completed`)
+      .setTitle(`Hack Status: completed ✅`)
       .setDescription(
         `Name: ${Member.user.username} | ID: ${
           Member.user.id
         }`
       )
-      .setFooter(`RaGif Hacker!`)
-      .setTimestamp();
+      .setFooter(`RaGif Hacker!😈😂`)
+    //  .setTimestamp();
 
-    await message.channel.send(`Hacking Started! Hacking ${Member.user.username}`);
+    await message.channel.send(` ``` Hacking Started! ``` **Hacking ${Member.user.username}** `);
 
     await message.channel.send(`Hack Status: 10%`);
+
+    await message.channel.send(`Hack Status: ‼️ERROR‼️`);
+
+    await message.channel.send(`Hack Status: ❗️ERROR❗️`);
 
     await message.channel.send(`Hack Status: 20%`);
 
@@ -49,6 +53,8 @@ exports.run = async (app, message, client, args) => {
     await message.channel.send(`Hack Status: 70%`);
 
     await message.channel.send(`Hack Status: 80%`);
+
+    await message.channel.send(`Hack Status: ERROR404❗️`);
 
     await message.channel.send(`Hack Status: 90%`);
 
