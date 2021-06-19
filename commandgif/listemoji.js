@@ -1,11 +1,9 @@
 const Discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
-const client = new Discord.Client();
 exports.run = async (app, message, client, args) => {
  
 
 
-    client.on("message", message => {
     let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
@@ -23,7 +21,7 @@ exports.run = async (app, message, client, args) => {
         EmojiCount++;
         Emojis += Emoji(emoji.id);
       }
-    });
+    
     let Embed = new Discord.MessageEmbed()
       .setTitle(`Emojis in ${message.guild.name}.`)
       .setDescription(
@@ -32,7 +30,8 @@ exports.run = async (app, message, client, args) => {
       .setColor(`RANDOM`);
     message.channel.send(Embed);
   }
-});
+}
+
 
 exports.conf = {
   enabled: true,
