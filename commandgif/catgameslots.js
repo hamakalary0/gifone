@@ -14,9 +14,9 @@ exports.run = async (app, message, client, args) => {
     let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
     let we;
     if (slots1 === slots2 && slots2 === slots3) {
-      we = "برتەوە!";
+      we = "You Won!⭐️";
     } else {
-      we = "دۆڕایت!";
+      we = "You Lose!❌";
     }
    
 
