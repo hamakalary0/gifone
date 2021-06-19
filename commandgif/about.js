@@ -18,7 +18,7 @@ const embed = new Discord.MessageEmbed()
 .addField('__Bot Name__' , `\`${client.user.tag}\`` , true)
 .addField('__Bot ID__' , `\`${client.user.id}\`` , true)
 .addField('__My Ping__' , `\`${client.ws.ping}\`` , true)
-.addField('Owner Bot' , `<@640204311262920764>` , true)
+.addField('boost Count' , `\`${message.guild.premiumSubscriptionCount}\`` , true)
 message.channel.send({embed});
 }
 
