@@ -18,9 +18,23 @@ exports.run = async (app, message, client, args) => {
     } else {
       we = "دۆڕایت!";
     }
-    message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
+   
+
   }
 });
+
+let Member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.member;
+
+    let Result = sizes[Math.floor(Math.random() * sizes.length)];
+
+   
+
+message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`);
+
+   
 
 
    
