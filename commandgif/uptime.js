@@ -19,7 +19,7 @@ exports.run = async (app, message, client, args) => {
             .setFooter(message.guild.name, message.guild.iconURL())
             .setAuthor(bot.user.username, bot.user.displayAvatarURL())  
         message.channel.send(embed);
-    }
+    };
 
 
 
