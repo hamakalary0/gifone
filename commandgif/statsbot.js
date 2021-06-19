@@ -12,9 +12,9 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 .setAuthor(`RaGif Stats`, ``)
 .setDescription(``)
-.addField('__Servers__', `\`${client.guilds.cache.size}\``, true)
-.addField('__Channels__', `\`${client.channels.cache.size}\``, true)
-.addField('__Users__', `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
+.addField(' **im in Servers** ', `\`${client.guilds.cache.size}\``, true)
+.addField(' **Can I show** ', `\`${client.channels.cache.size}\``, true)
+.addField(' **User** ', `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
 message.channel.send({embed});
 }
 
