@@ -177,10 +177,6 @@ client.on("message", message => {
   }
 });
 
-client.login(config.token)
-
-
-
 client.on("message", function(message) {
   let args = message.content
     .split(" ")
@@ -192,4 +188,7 @@ client.on("message", function(message) {
   }
 });
 
+
+
 client.login(config.token)
+
