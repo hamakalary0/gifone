@@ -29,14 +29,14 @@ exports.run = async (app, message, client, args) => {
           Member.user.id
         }`
       )
-      .setFooter(`RaGif Hacker! ${Member.user.username}`)
+      .setFooter(`RaGif Hacker! ${Member.user.mention}`)
     //  .setTimestamp();
 
     await message.channel.send(` **~~Hacking Started!~~** __Hacking ${Member.user.username}__ `);
 
     await message.channel.send(`Hack Status: 10%`);
 
-    await message.channel.send(`Hack Status: ‼️ERROR‼️`);
+    await message.channel.send(`Hack Status: ❗️ERROR❗️`);
 
     await message.channel.send(`Hack Status: ❗️ERROR❗️`);
 
@@ -54,7 +54,7 @@ exports.run = async (app, message, client, args) => {
 
     await message.channel.send(`Hack Status: 80%`);
 
-    await message.channel.send(`Hack Status: ERROR404❗️`);
+    await message.channel.send(`Hack Status: ‼️ERROR404‼️`);
 
     await message.channel.send(`Hack Status: 90%`);
 
