@@ -24,7 +24,7 @@ const embed = new Discord.MessageEmbed()
    message.guild.members.cache.filter(m => m.presence.status == "idle").size
  }   
              
-- offline   ${
+                                              - offline   ${
    message.guild.members.cache.filter(m => m.presence.status == "offline").size
  } 
    all Members  ${message.guild.memberCount}** `)
