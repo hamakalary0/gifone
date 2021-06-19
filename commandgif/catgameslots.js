@@ -20,15 +20,15 @@ exports.run = async (app, message, client, args) => {
     }
    
 
-  }
-});
+
 
 let Member =
       message.mentions.members.first() ||
       message.guild.members.cache.get(args[0]) ||
       message.member;
 
-    let slots = sizes[Math.floor(Math.random() * sizes.length)];
+    
+}
 
    
 
