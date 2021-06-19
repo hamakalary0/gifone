@@ -13,7 +13,7 @@ const embed = new Discord.MessageEmbed()
 .setAuthor(`RaGif Stats`, ``)
 .setDescription(``)
 .addField(' **im in Servers** ', `\`${client.guilds.cache.size}\``, true)
-.addField(' **Can I show** ', `\`${client.channels.cache.size}\``, true)
+.addField(' **Can I show Above channel** ', `\`${client.channels.cache.size}\``, true)
 .addField(' **User** ', `\`${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}\``, true)
 message.channel.send({embed});
 }
