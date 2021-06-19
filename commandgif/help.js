@@ -10,7 +10,7 @@ const embed = new Discord.MessageEmbed()
 .setColor('RANDOM') 
 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
 // .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-// .setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
+.setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
 .setAuthor(`Gif Help`)
 .setDescription(`
 **Info Commands** (*)
@@ -34,14 +34,6 @@ const embed = new Discord.MessageEmbed()
 \`eng\` - \`arab\` - \`kurd\`
 \`persian\` - \`turk\` - \`rabbit\`
 
-**Music Commands**
-\`play\` -  \`skip\` - \`np\` 
-\`pasue\` - \`resume\` - \`stop\`
-\`queue\`
-
-**Econome Commands**
-\`daily\` - \`balance\` - \`send\`
-\`top\` - \`s(1-99999)\` 
 
 
 **Links**
