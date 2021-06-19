@@ -7,11 +7,22 @@ const { crFormat } = require('../../functions')
 const Discord = require('discord.js');
 const weather = require("weather-js");
 const { MessageEmbed } = require("discord.js");
-exports.run = async (app, message, client, args) => {
+
  
 
 
     //Start
+
+Canvas.registerFont(`${process.cwd()}/assets/fonts/RobotoRegular.ttf`, "RobotoRegular")
+Canvas.registerFont(`${process.cwd()}/assets/fonts/courbd.ttf`, "Courier New")
+Canvas.registerFont(`${process.cwd()}/assets/fonts/Impact.ttf`, "Impact")
+
+
+
+run: async (bot, message, args) => {
+
+
+
    
    let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
         if (user.user.bot) return message.channel.send(`**Bots Don't Have A Profile!**`);
