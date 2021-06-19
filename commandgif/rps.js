@@ -1,6 +1,5 @@
-const Discord = require('discord.js');
-const { MessageEmbed } = require("discord.js");
 const fs = require("fs");
+const Discord = require("discord.js");
 const chooseArr = ["✌", "✊", "✋"];
 function promptMessage(message, author, time, vaildReactions) {
     time *= 1000;
@@ -12,12 +11,20 @@ function promptMessage(message, author, time, vaildReactions) {
       .then(collected => collected.first() && collected.first().emoji.name);
   }
 
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["se", "showemoji"],
+  permLevel: 0
+};
 
-exports.run = async (app, message, client, args) => {
-
-
-
-const embed = new Discord.MessageEmbed()
+exports.help = {
+  name: 'se',
+  description: 'rexuss',
+  usage: 'se'
+};		
+  run: async (client, message, args, dev,dev2) => {
+        const embed = new Discord.MessageEmbed()
             .setColor("29ffed")
             .setFooter(message.author.username, message.author.displayAvatarURL())
             .setTitle("**React to play Rock Paper Scissor**")
@@ -48,20 +55,3 @@ const embed = new Discord.MessageEmbed()
             }
         }}
   }
-
-
-
-
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["rps", "Rps"],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'rps',
-  description: 'rexuss',
-  usage: 'rps'
-};
-
