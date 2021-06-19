@@ -185,8 +185,8 @@ client.on("message", function(message) {
   if (message.content.startsWith(prefix + "sa")) {
     if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
     message.channel.send(`** ${args}**`);
-  }
-});
+  };
+
 
 
 
