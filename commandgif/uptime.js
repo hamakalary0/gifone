@@ -6,20 +6,21 @@ exports.run = async (app, message, client, args) => {
 
     //Start
    
-   let days = Math.floor(bot.uptime / 86400000);
-        let hours = Math.floor(bot.uptime / 3600000) % 24;
-        let minutes = Math.floor(bot.uptime / 60000) % 60;
-        let seconds = Math.floor(bot.uptime / 1000) % 60;
+   let channel = message.mentions.channels.first() || bot.guilds.cache.get(message.guild.id).channels.cache.get(args[0]) || message.guild.channels.cache.find(r => r.name.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.channel;
+        if (!channel) return message.channel.send("**Channel Not Found!**");
 
-        const embed = new MessageEmbed()
-            .setTitle("Uptime")
+        let channelembed = new MessageEmbed()
+            .setTitle(`Channel Information for ${channel.name}`)
+            .setThumbnail(message.guild.iconURL())
+            .addField("**NSFW**", channel.nsfw, true)
+            .addField("**Channel ID**", channel.id, true)
+            .addField("**Channel Type**", channel.type)
+            .addField("**Channel Description**", `${channel.topic || "No Description"}`)
+            .addField("**Channel Created At**", channel.createdAt)
             .setColor(`RANDOM`)
-            .setDescription(`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`)
-            .setThumbnail(bot.user.displayAvatarURL())
-            .setFooter(message.guild.name, message.guild.iconURL())
-            .setAuthor(bot.user.username, bot.user.displayAvatarURL())  
         message.channel.send(embed);
-    };
+    }
+}
 
 
 
