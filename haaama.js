@@ -183,7 +183,15 @@ client.on("message", message => {
 ////
 ////
 
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
+client.on("message", msg => {
+  if (msg.content === "Slaw") {
+    msg.reply("**buasta ta roll ba dastek deta xat**");
+  }
+});
 
 
 client.login(config.token)
