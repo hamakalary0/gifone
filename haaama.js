@@ -219,7 +219,7 @@ client.on("message", msg => {
 
 
 client.on("message", message => {
-  if (message.content === "al") {
+  if (message.content === "allchannel") {
     var channels = message.guild.channels.cache
       .map(channels => `${channels.name}, `)
       .join("\n ");
@@ -232,7 +232,31 @@ client.on("message", message => {
 
 
 
+client.on("message", message => {
+  if (message.content === "all channel") {
+    var channels = message.guild.channels.cache
+      .map(channels => `${channels.name}, `)
+      .join("\n ");
+    const embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .addField("rooms:", `**[${channels}]**`);
+    message.channel.send(embed);
+  }
+});
 
+
+
+client.on("message", message => {
+  if (message.content === "Allchannel") {
+    var channels = message.guild.channels.cache
+      .map(channels => `${channels.name}, `)
+      .join("\n ");
+    const embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .addField("rooms:", `**[${channels}]**`);
+    message.channel.send(embed);
+  }
+});
 
 
 
