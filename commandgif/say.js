@@ -14,7 +14,7 @@ exports.run = async (app, message, client, args) => {
     if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
     message.channel.send(`** ${args}**`);
   }
-});
+}
 
 
 
