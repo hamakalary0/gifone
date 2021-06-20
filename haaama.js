@@ -293,7 +293,7 @@ client.on("message", function(message) {
     .split(" ")
     .slice(1)
     .join(" ");
-  if (message.content.startsWith("prefix" + "say")) {
+  if (message.content.startsWith("*" + "say")) {
     if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
     message.channel.send(`** ${args}**`);
   }
