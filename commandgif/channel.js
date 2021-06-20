@@ -10,14 +10,15 @@ const embed = new Discord.MessageEmbed()
 .setColor(`RANDOM`)
 .setFooter(`RaGif Bot`)    
 
-.addField(**"ID"**, `\`${role.id}\``, true)
-      .addField(**"Name"**, ${role.name}, true)
-      .addField(**"Hex"**, ${role.hexColor})
-      .addField(**"Members"**, ${role.members.size})
-      .addField(**"Position"**, ${role.position})
-      .addField(**"Mentionable"**, status[${role.mentionable}])
-      .addField(**"Time Create"**, ${role.createdAt.toLocaleString}(), true)
-
+      .addField("**ID**", `\`${role.id}\``, true)
+      .addField("**Name**", role.name, true)
+      .addField("**Hex**", role.hexColor)
+      .addField("**Members**", role.members.size)
+      .addField("**Position**", role.position)
+      .addField("**Mentionable**", status[role.mentionable])
+      .addField("**Time Create**", role.createdAt.toLocaleString(), true)
+      .setFooter(message.member.displayName, message.author.displayAvatarURL())
+      .setTimestamp();
 
 message.channel.send({embed});
 }
