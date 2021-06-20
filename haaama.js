@@ -194,5 +194,25 @@ client.on("message", msg => {
 });
 
 
+////
+////
+////
+////
+
+
+
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on("message", msg => {
+  if (msg.content === "<@640204311262920764>") {
+    msg.reply(" ``` Gyan bra Hama Lera Neya Farmu``` ");
+  }
+});
+
+
+
+
 client.login(config.token)
 
