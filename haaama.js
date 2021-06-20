@@ -273,7 +273,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content === "Allchannel") {
+  if (message.content === prefix + "Allchannel") {
     var channels = message.guild.channels.cache
       .map(channels => `${channels.name}, `)
       .join("\n ");
