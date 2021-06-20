@@ -259,7 +259,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content === "all channel") {
+  if (message.content === prefix + "all channel") {
     var channels = message.guild.channels.cache
       .map(channels => `${channels.name}, `)
       .join("\n ");
@@ -363,7 +363,7 @@ client.on("message", async message => {
       .slice(1)
       .join(" ");
 
-    if (!args[0]) return message.channel.send("**DU KAS TAG BKA!**");
+    if (!args[0]) return message.channel.send("**Mention 2 User!**");
     if (!args[1])
       return message.channel.send("You need to mention someone else!");
 
