@@ -529,7 +529,7 @@ client.on("message", message => {
       message.delete();
     });
     message.channel
-      .send("**** The crime has been successfully hidden 🕳 **")
+      .send("** The crime has been successfully hidden 🕳 **")
       .then(msg => msg.delete(7000));
   }
 });
