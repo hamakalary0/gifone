@@ -13,12 +13,19 @@ exports.run = async (app, message, client, args) => {
     if (!args[0]) return message.channel.send("Write Some Things");
     args.join(" "),
       (err, data) => {
-        message.channel.send("```" + data + "```");
+       
       };
   }
 });
 
+let Member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.member;
 
+    
+
+message.channel.send("```" + data + "```");
 
 
 exports.conf = {
