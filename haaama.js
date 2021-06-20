@@ -12,7 +12,7 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`*help / Mention my` , { type:"PLAYING" })
+ client.user.setActivity(`*help / Tag My` , { type:"PLAYING" })
   console.log("${client.user.tag}")
 });
 
@@ -210,6 +210,29 @@ client.on("message", msg => {
     msg.reply(" ``` Gyan bra Hama Lera Neya Farmu``` ");
   }
 });
+
+////
+////
+///
+////
+
+
+
+client.on("message", message => {
+  if (message.content === "al") {
+    var channels = message.guild.channels.cache
+      .map(channels => `${channels.name}, `)
+      .join("\n ");
+    const embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .addField("rooms:", `**[${channels}]**`);
+    message.channel.send(embed);
+  }
+});
+
+
+
+
 
 
 
