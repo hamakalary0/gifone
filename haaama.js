@@ -188,8 +188,8 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "Slaw") {
-    msg.reply("**buasta ta roll ba dastek deta xat**");
+  if (msg.content === "<@814607957349629962>") {
+    msg.reply(" ``` my Prefix In This Server (*)``` ");
   }
 });
 
