@@ -18,7 +18,7 @@ server  -  about  -  user  -  say
 ping  -  avatar  -  vote  -  inv
 report  -  sug  -  afk  -  invites
 topinvite  -  sbot  -  allmem
-perms  -  uptime
+perms  -  uptime  -  allchannel
 
 **Gifs Commands**
 boy  -  girl  -  baby
@@ -38,7 +38,7 @@ persian  -  turk  -  rabbit
 **memes Command**
 Meme  -  mem  -  helpmem  - memes
 cmeme  -  howgay  -  dicksize  - hack
-heart
+heart  -  resporter
 
 
 
