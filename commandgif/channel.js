@@ -20,7 +20,7 @@ const embed = new Discord.MessageEmbed()
       .setFooter(message.member.displayName, message.author.displayAvatarURL())
       .setTimestamp();
 
-message.channel.send({embed});
+message.channel.send(embed);
 }
 
 exports.conf = {
