@@ -267,7 +267,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith("conf" + "perms")) {
+  if (message.content.startsWith( "*" + "perms")) {
     if (!message.channel.guild) return;
     var perms = JSON.stringify(
       message.channel.permissionsFor(message.author).serialize(),
@@ -282,20 +282,6 @@ client.on("message", message => {
   }
 });
 
-
-
-exports.conf = {
-enabled: true,
-guildOnly: false,
-aliases: ["per", "perms", "Perms"],
-permLevel: 0
-};
-
-exports.conf = {
-  name: 'perms',
-  description: 'rexuss',
-  usage: 'perms'
-};
 
 
 
