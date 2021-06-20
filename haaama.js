@@ -478,7 +478,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith("*" + "list em")) {
+  if (message.content.startsWith("em")) {
     let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
