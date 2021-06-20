@@ -1,6 +1,3 @@
-
-
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const moment = require('moment');
@@ -10,6 +7,10 @@ exports.run = async (client, message, args, msg) => {
 
 const embed = new Discord.MessageEmbed()
    
+    let Member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.member;
 
     let now = new Date();
     let next = new Date(now);
