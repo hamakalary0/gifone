@@ -327,7 +327,7 @@ client.on("message", async message => {
 ////
 ////
 
-client.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.XubgKR_hlLMjHSGKGM_aSLqUm-I");
+client.login("ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.jPg5_S0aBshO8IbBMnQxY-bO1kg");
 const prefix = "1";
 
    
