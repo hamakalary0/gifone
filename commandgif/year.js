@@ -1,7 +1,15 @@
 
+
+
 const Discord = require('discord.js');
-const { MessageEmbed } = require("discord.js");
-exports.run = async (app, message, client, args) => {
+const client = new Discord.Client();
+const moment = require('moment');
+var config = require('../config.json');
+
+exports.run = async (client, message, args, msg) => {
+
+const embed = new Discord.MessageEmbed()
+   
 
     let now = new Date();
     let next = new Date(now);
