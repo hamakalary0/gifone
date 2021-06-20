@@ -178,6 +178,32 @@ client.on("message", message => {
 
 
 
+
+
+
+
+
+client.login("ODE0NjA3OTU3MzQ5NjI5OTYy.YDgUxw.iDlmOwH59X52sFCVGe7ankmBHSU");
+const prefix = "*";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////
 ////
 ////
@@ -219,7 +245,7 @@ client.on("message", msg => {
 
 
 client.on("message", message => {
-  if (message.content === "allchannel") {
+  if (message.content === prefix + "allchannel") {
     var channels = message.guild.channels.cache
       .map(channels => `${channels.name}, `)
       .join("\n ");
@@ -267,7 +293,7 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith( "*" + "perms")) {
+  if (message.content.startsWith(prefix + "perms")) {
     if (!message.channel.guild) return;
     var perms = JSON.stringify(
       message.channel.permissionsFor(message.author).serialize(),
@@ -293,7 +319,7 @@ client.on("message", function(message) {
     .split(" ")
     .slice(1)
     .join(" ");
-  if (message.content.startsWith("*" + "say")) {
+  if (message.content.startsWith(prefix + "say")) {
     if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
     message.channel.send(`** ${args}**`);
   }
@@ -308,7 +334,7 @@ client.on("message", function(message) {
 
 
 client.on("message", async message => {
-  if (message.content.startsWith("*" + "uptime")) {
+  if (message.content.startsWith(prefix + "uptime")) {
     let rozh = Math.floor(client.uptime / 86400000);
     let katzhmer = Math.floor(client.uptime / 3600000) % 24;
     let daqa = Math.floor(client.uptime / 60000) % 60;
@@ -327,8 +353,6 @@ client.on("message", async message => {
 ////
 ////
 
-client.login("ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.jPg5_S0aBshO8IbBMnQxY-bO1kg");
-const prefix = "1";
 
    
 
