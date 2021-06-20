@@ -476,22 +476,64 @@ client.on("message", message => {
 ///
 ///
 
-client.on("message", msg => {
-  if (msg.content == prefix + "guild") {
-    let embed = new Discord.MessageEmbed()
-      .setThumbnail(msg.guild.iconURL())
-      .setColor("RANDOM")
-      .addField("Year📆", msg.guild.createdAt.getFullYear())
-      .addField("Hour📆", msg.guild.createdAt.getHours())
-      .addField("Day📆", msg.guild.createdAt.getDay())
-      .addField("Month📆", msg.guild.createdAt.getMonth())
-      .addField("Minutes📆", msg.guild.createdAt.getMinutes())
-      .addField("Seconds📆", msg.guild.createdAt.getSeconds())
-      .addField("Full📆", msg.guild.createdAt.toLocaleString())
-      .setTimestamp();
-    msg.channel.send(embed);
-  }
-});
+client.on('message', message => {
+         if (message.content === prefix + "date") {
+         if (!message.channel.guild) return   
+         var currentTime = new Date(),
+            hours = currentTime.getHours() + 4 ,
+            hours2 = currentTime.getHours() + 3 ,
+            hours3 = currentTime.getHours() + 2 ,
+            hours4 = currentTime.getHours() + 3 ,
+            minutes = currentTime.getMinutes(),
+            seconds = currentTime.getSeconds(),
+            Year = currentTime.getFullYear(),
+            Month = currentTime.getMonth() + 1,
+            Day = currentTime.getDate();
+             var h = hours
+  if(hours > 12) {
+               hours -= 12;
+            } else if(hours == 0) {
+                hours = "12";
+            }  
+             if(hours2 > 12) {
+               hours2 -= 12;
+            } else if(hours2 == 0) {
+                hours2 = "12";
+            
+            }  
+                         if(hours3 > 12) {
+               hours3 -= 12;
+            } else if(hours3 == 0) {
+                hours3 = "12";
+            } 
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+            var suffix = 'AM';
+            if (hours >= 12) {
+                suffix = 'PM';
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+ 
+
+                var Date15= new Discord.MessageEmbed()
+                .setThumbnail("https://i.imgur.com/ib3n4Hq.png") 
+                .setTitle( "TIME AND DATE")
+                .setColor('RANDOM')
+                .setFooter("BLACK BOT")
+                .setFooter(message.author.username, message.author.avatarURL())
+                 .addField('Time',
+                "『"+ hours2 + ":" + minutes +":"+ seconds  + "』") 
+              
+                .addField('Date',
+                "『"+ Day + "-" + Month + "-" + Year +  "』")
+
+                 message.channel.send(Date15);
+        }
+    });
 
 ////
 ////
