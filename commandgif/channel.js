@@ -10,7 +10,7 @@ const embed = new Discord.MessageEmbed()
 .setColor(`RANDOM`)
 .setFooter(`RaGif Bot`)    
 
-.addField(**ID**, `\`${role.id}\``, true)
+.addField(**"ID"**, `\`${role.id}\``, true)
       .addField(**"Name"**, ${role.name}, true)
       .addField(**"Hex"**, ${role.hexColor})
       .addField(**"Members"**, ${role.members.size})
