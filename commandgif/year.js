@@ -20,7 +20,7 @@ exports.run = async (app, message, client, args) => {
     .setDescription(`There are **${days} days**, **${hours} hours**, **${minutes} minutes** and **${seconds} seconds** until **${next.getFullYear()}**!`)
     .setImage("")
     .setFooter(`Or, in short, ${moment.duration(next - now).humanize()}.`)
-    message.channel.send(embed)
+    message.channel.send(embed);
 }
 
 
