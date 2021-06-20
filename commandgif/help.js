@@ -18,6 +18,7 @@ server  -  about  -  user  -  say
 ping  -  avatar  -  vote  -  inv
 report  -  sug  -  afk  -  invites
 topinvite  -  sbot  -  allmem
+perms
 
 **Gifs Commands**
 boy  -  girl  -  baby
