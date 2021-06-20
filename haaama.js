@@ -445,7 +445,36 @@ function timeCon(time) {
 
 
 
+///
+///
+///
+///
 
+
+
+
+client.on("message", message => {
+  if (message.content === prefix + "calendar") {
+    var currentTime = new Date(),
+      Year = currentTime.getFullYear(),
+      Month = currentTime.getMonth() + 1,
+      Day = currentTime.getDate();
+
+    var clinet = new Discord.MessageEmbed()
+      .setTitle("[ TODAY]  ")
+      .setColor("RANDOM")
+      .setTimestamp()
+      .setDescription("" + Day + "-" + Month + "-" + Year + "");
+    message.channel.send(clinet);
+  }
+});
+
+
+
+///
+///
+///
+///
 
 
 client.login(config.token)
