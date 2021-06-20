@@ -603,15 +603,8 @@ client.on("message", message => {
 
 
 
-
-
 client.on('message', message => {
-    if (message.content.startsWith(prefix  + 'sug')) {
- //       if (message.member.hasPermission("MANAGE_GUILD")) return message.reply("Sorry You Not Have Premission MANAGE GUILD")
-   var say = message.content.split(" ").slice(1).join(" ");
-    if(!say) return message.reply("**Please Type Message For say**")
-        message.channel.send(say);
-}
+   
     if (message.content.startsWith(prefix  + "embed")) {
  //       if (message.member.hasPermission("MANAGE_GUILD")) return message.reply("Sorry You Not Have Premission MANAGE GUILD")
    var args = message.content.split(" ").slice(1).join(" ");
@@ -619,12 +612,11 @@ client.on('message', message => {
    const embed = new Discord.MessageEmbed()
         .setColor('RANDOM')
         .setThumbnail(message.author.avatarURL())
-        .setAuthor(message.author.username,message.author.avatarURL())
+    //    .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
         message.channel.send(embed);
 }
 });
-
 
 
 
