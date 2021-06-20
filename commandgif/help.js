@@ -19,6 +19,7 @@ ping  -  avatar  -  vote  -  inv
 report  -  sug  -  afk  -  invites
 topinvite  -  sbot  -  allmem
 perms  -  uptime  -  allchannel
+stats  -  calendar
 
 **Gifs Commands**
 boy  -  girl  -  baby
