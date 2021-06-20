@@ -7,13 +7,16 @@ exports.run = async (app, message, client, args) => {
 
 
 
-    .split(" ")
-    .slice(1)
-    .join(" ");
-  if (message.content.startsWith(prefix + "say")) {
-    if (!message.member.hasPermission("MANAGE_MESSAGE")) if (!args) return;
-    message.channel.send(`** ${args}**`);
+     message.delete();
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return;
+    let args = message.content.split(" ").slice(1);
+    if (!args[0]) return message.channel.send("Write Some Things");
+    args.join(" "),
+      (err, data) => {
+        message.channel.send("```" + data + "```");
+      };
   }
+});
 
 
 
