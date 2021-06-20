@@ -15,3 +15,20 @@ exports.run = async (app, message, client, args) => {
     message.channel.send(`** ${args}**`);
   }
 });
+
+
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["say", "1"],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'say',
+  description: 'rexuss',
+  usage: 'say'
+};
+
+//txnoembed
