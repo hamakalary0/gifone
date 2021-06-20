@@ -259,6 +259,30 @@ client.on("message", message => {
 });
 
 
+////
+////
+////
+////
+////
+
+
+client.on("message", message => {
+  if (message.content.startsWith("perms")) {
+    if (!message.channel.guild) return;
+    var perms = JSON.stringify(
+      message.channel.permissionsFor(message.author).serialize(),
+      null,
+      4
+    );
+    var embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .setTitle(":tools: Permissions")
+      .addField("Your Permissions:", perms);
+    message.channel.send({ embed: embed });
+  }
+});
+
+
 
 
 client.login(config.token)
