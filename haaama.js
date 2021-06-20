@@ -605,7 +605,7 @@ client.on("message", message => {
 
 client.on('message', message => {
    
-    if (message.content.startsWith(prefix  + "embed")) {
+    if (message.content.startsWith(prefix  + "sug")) {
  //       if (message.member.hasPermission("MANAGE_GUILD")) return message.reply("Sorry You Not Have Premission MANAGE GUILD")
    var args = message.content.split(" ").slice(1).join(" ");
    if(!args) return message.reply("**Please Type Message For say Embed**")
@@ -614,6 +614,8 @@ client.on('message', message => {
         .setThumbnail(message.author.avatarURL())
     //    .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
+        message.react("✅")
+        message.react("❌")
         message.channel.send(embed);
 }
 });
