@@ -332,7 +332,7 @@ client.on("message", async message => {
    
 
 client.on("message", async message => {
-  if (message.content.startsWith(prefix + "resporter")) {
+  if (message.content.startsWith("prefix" + "resporter")) {
     let args = message.content
       .split(" ")
       .slice(1)
