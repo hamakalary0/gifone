@@ -327,12 +327,13 @@ client.on("message", async message => {
 ////
 ////
 
-
+client.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.XubgKR_hlLMjHSGKGM_aSLqUm-I");
+const prefix = "1";
 
    
 
 client.on("message", async message => {
-  if (message.content.startsWith("prefix" + "resporter")) {
+  if (message.content.startsWith(prefix + "resporter")) {
     let args = message.content
       .split(" ")
       .slice(1)
