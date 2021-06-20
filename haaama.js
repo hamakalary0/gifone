@@ -477,7 +477,7 @@ client.on("message", message => {
 ///
 
 client.on("message", msg => {
-if (msg.content.startsWith(prefix + "year")){
+if (message.content === prefix + "year")){
     let now = new Date();
     let next = new Date(now);
     next.setFullYear(now.getFullYear() + 1);
@@ -495,7 +495,7 @@ if (msg.content.startsWith(prefix + "year")){
     .setDescription(`There are **${days} days**, **${hours} hours**, **${minutes} minutes** and **${seconds} seconds** until **${next.getFullYear()}**!`)
     .setImage("")
     .setFooter(`Or, in short, ${moment.duration(next - now).humanize()}.`)
-    msg.channel.send(embed)
+    message.channel.send(embed)
 }
 })
 
