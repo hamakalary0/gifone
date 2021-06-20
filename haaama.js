@@ -478,34 +478,46 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith("em")) {
-    let Emojis = "";
-    let EmojisAnimated = "";
-    let EmojiCount = 0;
-    let Animated = 0;
-    let OverallEmojis = 0;
-    function Emoji(id) {
-      return client.emojis.cache.get(id).toString();
-    }
-    message.guild.emojis.cache.forEach(emoji => {
-      OverallEmojis++;
-      if (emoji.animated) {
-        Animated++;
-        EmojisAnimated += Emoji(emoji.id);
-      } else {
-        EmojiCount++;
-        Emojis += Emoji(emoji.id);
-      }
-    });
-    let Embed = new Discord.MessageEmbed()
-      .setTitle(`Emojis in ${message.guild.name}.`)
-      .setDescription(
-        `**Animated [${Animated}]**:\n${EmojisAnimated}\n\n**Standard [${EmojiCount}]**:\n${Emojis}\n\n**All Emoji [${OverallEmojis}]**`
-      )
-      .setColor(`RANDOM`);
-     message.channel.send({ embed: embed });
+  if(message.content.startsWith(prefix + "banner")) {
+    if(message.guild.bannerURL() === null || message.guild.bannerURL === undefined) return message.channel.send("**❌ | This server doesn\'t have a banner.**");
+    const ba = new Discord.MessageEmbed()
+    .setAuthor(message.guild.name, message.guild.iconURL())
+    .setDescription(`[Banner URL](${message.guild.bannerURL}?size=2048)`)
+    .setImage(message.guild.bannerURL() + "?size=2048")
+    message.channel.send({embed : ba})
   }
 });
+
+
+
+////
+////
+////
+////
+////
+
+client.on("message", msg => {
+if (msg.content.startsWith(prefix + "year")){
+    let now = new Date();
+    let next = new Date(now);
+    next.setFullYear(now.getFullYear() + 1);
+    next.setHours(0, 0, 0, 0);
+    next.setMonth(0, 1);
+    let duration = next - now;
+    let seconds = Math.floor((duration / 1000) % 60);
+    let minutes = Math.floor((duration / 1000 / 60) % 60);
+    let hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+    let days = Math.floor(duration / (1000 * 60 * 60 * 24));
+    
+    let embed = new Discord.MessageEmbed()
+    .setAuthor("Next Year!", msg.author.displayAvatarURL())
+    .setColor("RANDOM")
+    .setDescription(`There are **${days} days**, **${hours} hours**, **${minutes} minutes** and **${seconds} seconds** until **${next.getFullYear()}**!`)
+    .setImage("")
+    .setFooter(`Or, in short, ${moment.duration(next - now).humanize()}.`)
+    msg.channel.send(embed)
+}
+})
 
 
 
