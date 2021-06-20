@@ -329,6 +329,19 @@ client.on("message", async message => {
 
 
 
+   
+
+client.on("message", async message => {
+  if (message.content.startsWith(prefix + "resporter")) {
+    let args = message.content
+      .split(" ")
+      .slice(1)
+      .join(" ");
+
+    if (!args[0]) return message.channel.send("**DU KAS TAG BKA!**");
+    if (!args[1])
+      return message.channel.send("You need to mention someone else!");
+
     if (args[0] || args[1]) {
       var FirstUser =
         message.mentions.members.first() ||
@@ -365,6 +378,12 @@ client.on("message", async message => {
     }
   }
 });
+
+
+
+
+
+
 
 
 
