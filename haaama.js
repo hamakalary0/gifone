@@ -503,7 +503,7 @@ client.on("message", message => {
         `**Animated [${Animated}]**:\n${EmojisAnimated}\n\n**Standard [${EmojiCount}]**:\n${Emojis}\n\n**All Emoji [${OverallEmojis}]**`
       )
       .setColor(`RANDOM`);
-    message.channel.send(Embed);
+     message.channel.send({ embed: embed });
   }
 });
 
