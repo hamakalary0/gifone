@@ -11,12 +11,12 @@ const embed = new Discord.MessageEmbed()
 .setFooter(`RaGif Bot`)    
 
 .addField(**ID**, `\`${role.id}\``, true)
-      .addField(**Name**, role.name, true)
-      .addField(**Hex**, role.hexColor)
-      .addField(**Members**, role.members.size)
-      .addField(**Position**, role.position)
-      .addField(**Mentionable**, status[role.mentionable])
-      .addField(**Time Create**, role.createdAt.toLocaleString(), true)
+      .addField(**Name**, ${role.name}, true)
+      .addField(**Hex**, ${role.hexColor})
+      .addField(**Members**, ${role.members.size})
+      .addField(**Position**, ${role.position})
+      .addField(**Mentionable**, status[${role.mentionable}])
+      .addField(**Time Create**, ${role.createdAt.toLocaleString}(), true)
 
 
 message.channel.send({embed});
