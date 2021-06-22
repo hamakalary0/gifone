@@ -18,9 +18,9 @@ exports.run = async (app, message, client, args) => {
   //              return message.channel.send(`**${member.displayName} didn't invite anyone to the server!**`, (member === message.member ? null : member));
     // {}          }
 
-            let content = memberInvites.map(i => i.code).join("\n");
-            let index = 0;
-            memberInvites.forEach(invite => index += invite.uses);
+     ///     let content = memberInvites.map(i => i.code).join("\n");
+   ///         let index = 0;
+   ///         memberInvites.forEach(invite => index += invite.uses);
 
             let embed = new Discord.MessageEmbed()
                 .setColor("GREEN")
