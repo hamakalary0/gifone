@@ -41,7 +41,7 @@ exports.run = async (dev, message, client, args,dev2) => {
                 (me === "✌" && clientChosen === "✋")) {
                     return "You won!";
             } else if (me === clientChosen) {
-                return "It's a tie";
+                return "my = you";
             } else {
                 return "You lost";
             }
@@ -54,14 +54,14 @@ exports.run = async (dev, message, client, args,dev2) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["1"],
+  aliases: ["rps", "RPS", Rps],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'text',
+  name: 'rps',
   description: 'rexuss',
-  usage: 'text'
+  usage: 'rockpapersizer'
 };
 
   
