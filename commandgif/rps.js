@@ -54,7 +54,7 @@ exports.run = async (dev, message, client, args,dev2) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["rps", "RPS", Rps],
+  aliases: ["rps", "RPS", "Rps"],
   permLevel: 0
 };
 
