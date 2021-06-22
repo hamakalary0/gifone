@@ -39,7 +39,7 @@ persian  -  turk  -  rabbit
 **memes Command**
 Meme  -  mem  -  helpmem  - memes
 cmeme  -  howgay  -  dicksize  - hack
-heart  -  resporter  -  kill
+heart  -  resporter  -  kill - rps
 
 
 
