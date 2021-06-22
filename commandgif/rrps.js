@@ -46,7 +46,7 @@ exports.run = async (dev, message, client, args,dev2) => {
                 return "You lost";
             }
         }}
-  }
+  
 
 
 
