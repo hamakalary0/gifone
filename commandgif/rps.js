@@ -20,7 +20,7 @@ exports.run = async (dev, message, client, args,dev2) => {
             .setColor("29ffed")
             .setFooter(message.author.username, message.author.displayAvatarURL())
             .setTitle("**React to play Rock Paper Scissor**")
-            .setTimestamp();
+    //        .setTimestamp();
             
         const m = await message.channel.send(embed);
         const reacted = await promptMessage(m, message.author, 30, chooseArr);
