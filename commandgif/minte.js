@@ -1,52 +1,69 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const moment = require('moment');
-var config = require('../config.json');
-
-exports.run = async (client, message, args, msg) => {
-
-const embed = new Discord.MessageEmbed()
-    
-.setColor('#RANDOM') 
-.setThumbnail(message.author.avatarURL({dynamic: "true"}))
-// .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-.setImage(`https://media.discordapp.net/attachments/790836700561670145/838461806137442365/image0.gif`)
-/// .setTitle(`link - https://top.gg/bot/814607957349629962`)
-.setAuthor(`1Minte`)
-.setDescription(`
+const { MessageEmbed } = require("discord.js");
+exports.run = async (app, message, client, args) => {
+ 
 
 
-await message.channel.send(`1`);
+    //Start
+   
+   
 
-await message.channel.send(`2`);
+    let Member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.member;
 
-await message.channel.send(`3`);
+    if (!Member)
+      return message.channel.send(
+        `Please Mention Some One!`
+      );
 
-await message.channel.send(`4`);
+    if (Member.user.id === message.author.id)
+      return message.channel.send(`You Can't Hack Your Self Lmao!`);
 
-await message.channel.send(`5`);
+    let embed = new MessageEmbed()
+      .setColor(`RANDOM`)
+      .setTitle(`Hack Status: completed ✅`)
+      .setDescription(
+        `Name: ${Member.user.username} | ID: ${
+          Member.user.id
+        }`
+      )
+      .setFooter(`RaGif Hacker! ${Member.user.username}`)
+    //  .setTimestamp();
 
-await message.channel.send(`6`);
+    await message.channel.send(` __**1minte Started ✅**__ `);
 
-await message.channel.send(`7`);
+    await message.channel.send(`1`);
 
-await message.channel.send(`8`);
+    await message.channel.send(`2`);
 
-await message.channel.send(`9`);
+    await message.channel.send(`3`);
 
+    await message.channel.send(`4`);
 
+    await message.channel.send(`5`);
 
+    await message.channel.send(`6`);
 
+    await message.channel.send(`7`);
 
+    await message.channel.send(`8`);
 
+    await message.channel.send(`9`);
 
+    await message.channel.send(`10`);
 
+    await message.channel.send(`11`);
 
-`)
-    
-message.channel.send({embed});
-}
+    await message.channel.send(`12`);
 
+    setTimeout(function() {
+      message.channel.send(embed);
+    }, 5000);
+
+    //End
+  }
 
 
 
