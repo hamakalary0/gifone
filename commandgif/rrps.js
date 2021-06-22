@@ -1,5 +1,6 @@
+const Discord = require('discord.js');
+const { MessageEmbed } = require("discord.js");
 const fs = require("fs");
-const Discord = require("discord.js");
 const chooseArr = ["✌", "✊", "✋"];
 function promptMessage(message, author, time, vaildReactions) {
     time *= 1000;
@@ -12,7 +13,8 @@ function promptMessage(message, author, time, vaildReactions) {
   }
     
 
-run: async (client, message, args, dev,dev2) => {
+exports.run = async (dev, message, client, args,dev2) => {
+
   
   const embed = new Discord.MessageEmbed()
             .setColor("29ffed")
@@ -44,7 +46,7 @@ run: async (client, message, args, dev,dev2) => {
                 return "You lost";
             }
         }}
-}
+  }
 
 
 
