@@ -39,11 +39,11 @@ exports.run = async (dev, message, client, args,dev2) => {
             if ((me === "✊" && clientChosen === "✌") ||
                 (me === "✋" && clientChosen === "✊") ||
                 (me === "✌" && clientChosen === "✋")) {
-                    return "You won!😋";
+                    return "You won!😭";
             } else if (me === clientChosen) {
                 return "We're both equal ♻️";
             } else {
-                return "You lost! 😭";
+                return "You lost! 😎";
             }
         }}
   
