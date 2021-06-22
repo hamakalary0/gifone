@@ -18,8 +18,7 @@ exports.run = async (app, message, client, args) => {
         `Please Mention Some One!`
       );
 
-    if (Member.user.id === message.author.id)
-      return message.channel.send(`You Can't Hack Your Self Lmao!`);
+    i
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
