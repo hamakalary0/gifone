@@ -12,7 +12,7 @@ exports.run = async (app, message, client, args) => {
 
     ///       let invites = await message.guild.fetchInvites()
 
-            let memberInvites = invites.filter(i => i.inviter && i.inviter.id === member.user.id);
+    ///        let memberInvites = invites.filter(i => i.inviter && i.inviter.id === member.user.id);
 
             if (memberInvites.size <= 0) {
                 return message.channel.send(`**${member.displayName} didn't invite anyone to the server!**`, (member === message.member ? null : member));
