@@ -12,7 +12,7 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`*help / Tag My` , { type:"PLAYING" })
+ client.user.setActivity(`*help / Tag To Help` , { type:"PLAYING" })
   console.log("${client.user.tag}")
 });
 
@@ -215,7 +215,7 @@ client.on("ready", () => {
 
 client.on("message", msg => {
   if (msg.content === "<@814607957349629962>") {
-    msg.reply(" my Prefix In This Server **( ${PREFIX} )** ");
+    msg.reply(" ``` My Prefix In This Server **( * )** ```  ");
   }
 });
 
