@@ -16,10 +16,10 @@ const embed = new Discord.MessageEmbed()
 **Info Commands** 
 server  -  about  -  user  -  say
 ping  -  avatar  -  vote  -  inv
-report  -  sug  -  afk  -  invites
+sug  -  afk  -  invites - date
 topinvite  -  sbot  -  allmem
 perms  -  uptime  -  allchannel
-stats  -  date 
+stats  
 
 **Gifs Commands**
 boy  -  girl  -  baby
