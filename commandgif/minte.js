@@ -17,14 +17,14 @@ exports.run = async (app, message, client, args) => {
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
-      .setTitle(`Hack Status: completed ✅`)
+      .setTitle(`1Minte Finished ✅`)
       .setDescription(
         `Name: ${Member.user.username} | ID: ${
           Member.user.id
         }`
       )
-      .setFooter(`RaGif Hacker! ${Member.user.username}`)
-    //  .setTimestamp();
+      .setFooter(`RaGif`)
+   
 
     await message.channel.send(` __**1minte Started ✅**__ `);
 
@@ -51,6 +51,113 @@ exports.run = async (app, message, client, args) => {
     await message.channel.send(`11`);
 
     await message.channel.send(`12`);
+
+    await message.channel.send(`13`);
+
+await message.channel.send(`14`);
+
+await message.channel.send(`15`);
+
+await message.channel.send(`16`);
+
+await message.channel.send(`17`);
+
+await message.channel.send(`18`);
+
+await message.channel.send(`19`);
+
+await message.channel.send(`20`);
+
+await message.channel.send(`21`);
+
+await message.channel.send(`22`);
+
+await message.channel.send(`23`);
+
+await message.channel.send(`24`);
+
+await message.channel.send(`25`);
+
+await message.channel.send(`26`);
+
+await message.channel.send(`27`);
+
+await message.channel.send(`28`);
+
+await message.channel.send(`29`);
+
+await message.channel.send(`30`);
+
+await message.channel.send(`31`);
+
+await message.channel.send(`32`);
+
+await message.channel.send(`33`);
+
+await message.channel.send(`34`);
+
+await message.channel.send(`35`);
+
+await message.channel.send(`36`);
+
+await message.channel.send(`37`);
+
+await message.channel.send(`38`);
+
+await message.channel.send(`39`);
+
+await message.channel.send(`40`);
+
+await message.channel.send(`41`);
+
+await message.channel.send(`42`);
+
+await message.channel.send(`43`);
+
+await message.channel.send(`44`);
+
+await message.channel.send(`45`);
+
+await message.channel.send(`46`);
+
+await message.channel.send(`47`);
+
+await message.channel.send(`48`);
+
+await message.channel.send(`49`);
+
+await message.channel.send(`50`);
+
+await message.channel.send(`51`);
+
+await message.channel.send(`52`);
+
+await message.channel.send(`53`);
+
+await message.channel.send(`54`);
+
+await message.channel.send(`55`);
+
+await message.channel.send(`56`);
+
+await message.channel.send(`57❗️`);
+
+await message.channel.send(`58❗️`);
+
+await message.channel.send(`59❗️`);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     setTimeout(function() {
       message.channel.send(embed);
