@@ -13,12 +13,7 @@ exports.run = async (app, message, client, args) => {
       message.guild.members.cache.get(args[0]) ||
       message.member;
 
-    if (!Member)
-      return message.channel.send(
-        `Please Mention Some One!`
-      );
-
-    i
+    
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
