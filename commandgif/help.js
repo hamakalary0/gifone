@@ -38,9 +38,8 @@ eng  -  arab  -  kurd
 persian  -  turk  -  rabbit
 
 **memes Command**
-Meme  -  mem  -  helpmem  - memes
-cmeme  -  howgay  -  dicksize  - hack
-heart  -  resporter  -  kill - rps
+Meme  -  howgay  -  dicksize  -  hack
+heart  -  resporter  -  kill  -  rps
 
 
 
