@@ -60,13 +60,13 @@ exports.run = async (app, message, client, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["tkurd", "textkurdish", "tk"],
+  aliases: ["hahahaha"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'kurdishtext',
+  name: 'kkkkkkkkkkk',
   description: 'rexuss',
-  usage: 'kurd'
+  usage: 'ppppppp'
 }; 
 
