@@ -12,7 +12,7 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`*help / Tag To Help` , { type:"PLAYING" })
+ client.user.setActivity(`R!help / R!` , { type:"PLAYING" })
   console.log("${client.user.tag}")
 });
 
@@ -183,7 +183,7 @@ client.on("message", message => {
 
 
 
-client.login("ODE0NjA3OTU3MzQ5NjI5OTYy.YDgUxw.iDlmOwH59X52sFCVGe7ankmBHSU");
+client.login("NzYxNzMxMjMxMjUwMzgyODY5.X3e3fQ.fnKOVDBFRUWGB2iQVCkadUbXNF4");
 const prefix = "*";
 
 
