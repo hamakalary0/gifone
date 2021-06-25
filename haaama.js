@@ -149,8 +149,6 @@ Revenge.send(new Discord.Attachment(RevengePP))
 //------------------------ HaaaMa Random Gif -----------------------//
 //------------------------ HaaaMa Random Gif -----------------------//
 
-client.login1("ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.HvMJ4jRnJPfxjBa9QdmdcnN1pvE");
-
 
 
 
