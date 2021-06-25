@@ -41,7 +41,7 @@ return message.channel.send(`:x: | **You Don't Have Permission To Use This Comma
       message.guild.members.cache.get(args[0]) ||
       message.member;
 
-    let Result = sizes[Math.floor(Math.random() * sizes.length)];
+   
 
     let embed = new MessageEmbed()
       .setColor(`RANDOM`)
