@@ -149,6 +149,11 @@ Revenge.send(new Discord.Attachment(RevengePP))
 //------------------------ HaaaMa Random Gif -----------------------//
 //------------------------ HaaaMa Random Gif -----------------------//
 
+client.login1("NzYxNzMxMjMxMjUwMzgyODY5.X3e3fQ.fnKOVDBFRUWGB2iQVCkadUbXNF4");
+
+
+
+
 
 const channelid = "843947526432096286"    //id channele vc
 client.on("ready", () => {
