@@ -7,7 +7,12 @@ exports.run = async (app, message, client, args) => {
 
     //Start
   
-    
+        let Member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.member;
+
+
 
         if (!message.member.hasPermission("MANAGE_EMOJIS")) {
 return message.channel.send(`:x: | **You Don't Have Permission To Use This Command**`)
@@ -36,27 +41,7 @@ return message.channel.send(`:x: | **You Don't Have Permission To Use This Comma
 
 
 
-    let Member =
-      message.mentions.members.first() ||
-      message.guild.members.cache.get(args[0]) ||
-      message.member;
-
    
-
-    let embed = new MessageEmbed()
-      .setColor(`RANDOM`)
-       .setTitle(`add emoji}`)
-  //   .setDescription(`\n${Result}`)
-       .setFooter(`RaGif`)
-//    .setTimestamp(); thanks
-      message.react("🤍")
-
-    message.channel.send(embed);
-
-
-    //End
-  };
-
 
 exports.conf = {
   enabled: true,
