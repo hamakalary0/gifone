@@ -34,8 +34,8 @@ Pneon  -  Panimal  -  Pcuople
 Psmoking  -  Pbillie
 
 **Text Commands**
-eng  -  arab  -  kurd
-persian  -  turk  -  rabbit
+textenglish  -  textarabic  -  textkurdish
+Soon
 
 **memes Command**
 Meme  -  howgay  -  dicksize  -  hack
