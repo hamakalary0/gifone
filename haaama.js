@@ -214,8 +214,8 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "<@814607957349629962>") {
-    msg.reply(" ``` My Prefix In This Server ( * ) ```  ");
+  if (msg.content === "<@!761731231250382869>") {
+    msg.reply(" ``` My Prefix In This Server ( R! ) ```  ");
   }
 });
 
