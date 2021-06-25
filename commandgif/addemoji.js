@@ -7,10 +7,7 @@ exports.run = async (app, message, client, args) => {
 
     //Start
   
-        let Member =
-      message.mentions.members.first() ||
-      message.guild.members.cache.get(args[0]) ||
-      message.member;
+       
 
 
 
@@ -31,7 +28,7 @@ return message.channel.send(`:x: | **You Don't Have Permission To Use This Comma
             ).then(em => message.channel.send(em.toString() + " added!")).catch(error => {
               message.channel.send(":x: | an Error occured")
                 console.log(error)
-})
+
           
         }
         
