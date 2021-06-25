@@ -34,7 +34,7 @@ Pneon  -  Panimal  -  Pcuople
 Psmoking  -  Pbillie
 
 **Text Commands**
-textenglish (*te) -  textarabic (*ta)  -  textkurdish (*tk)
+textenglish (te) -  textarabic (ta)  -  textkurdish (tk)
 Soon
 
 **memes Command**
