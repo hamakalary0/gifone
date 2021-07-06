@@ -1,10 +1,10 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const moment = require('moment');
 const { MessageEmbed } = require("discord.js");
 const db = require("quick.db");
 const ms = require("parse-ms");
 var config = require('../config.json');
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const moment = require('moment');
 
 
 exports.run = async (bot, client, message, args) => {
@@ -33,7 +33,7 @@ let user = message.author;
 
         }
     }
-}
+
 
 
 exports.conf = {
