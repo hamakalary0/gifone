@@ -35,3 +35,17 @@ let user = message.author;
     }
 }
 
+
+exports.conf = {
+enabled: true,
+guildOnly: false,
+aliases: ["D", "d", "dailyy"],
+permLevel: 0
+};
+
+exports.help = {
+  name: 'daily',
+  description: 'rexuss',
+  usage: 'daily'
+};
+
