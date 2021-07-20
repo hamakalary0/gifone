@@ -6,6 +6,10 @@ const config = require('./config.json');
 const app = express();
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+client.login("HaaaMa / token");
+const prefix = "HaaaMa / Prefix";
+
 client.on('ready', async () => {
    client.appInfo = await client.fetchApplication();
   setInterval( async () => {
@@ -219,10 +223,6 @@ client.on("guildDelete", guild => {
 
 
 
-
-
-client.login("NzYxNzMxMjMxMjUwMzgyODY5.X3e3fQ.fnKOVDBFRUWGB2iQVCkadUbXNF4");
-const prefix = "*";
 
 
 
