@@ -7,8 +7,8 @@ const app = express();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.login("token");   ///token bot
-const prefix = "prefix";  /// prefix bot
+client.login("token");   ///token bot.                   HaaaaaaaaMa
+const prefix = "prefix";  /// prefix bot.                HaaaaaaaaMa
 
 client.on('ready', async () => {
    client.appInfo = await client.fetchApplication();
