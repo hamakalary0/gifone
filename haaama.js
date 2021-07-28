@@ -7,8 +7,8 @@ const app = express();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.login("HaaaMa / token");
-const prefix = "HaaaMa / Prefix";
+client.login("token");
+const prefix = "prefix";
 
 client.on('ready', async () => {
    client.appInfo = await client.fetchApplication();
